@@ -1,0 +1,1966 @@
+======================================================================
+## SECTION .data  raw=0x74400 size=0x15200 VSz=0x150F0
+======================================================================
+--- ASCII (0) ---
+--- UTF-8 中文 (0) ---
+--- UTF-16 中文 (43) ---
+  䰰G
+  뮀J
+  촰A
+  쵀A
+  퀰A
+  쿠A
+  ≀I
+  ቀI
+  ⊠I
+  㶐I
+  㸐I
+  욥H
+  욀H
+  움H
+  윶H
+  윺H
+  윾H
+  읃H
+  읇H
+  읋H
+  읏H
+  읓H
+  읗H
+  읛H
+  읟H
+  읣H
+  읧H
+  워H
+  월H
+  웜H
+  웦H
+  웮H
+  웶H
+  웾H
+  윆H
+  윎H
+  윖H
+  윞H
+  윦H
+  윮H
+  㴐I
+  ꈲ⷟⮙
+  巍툠푦
+======================================================================
+## SECTION .rdata  raw=0x89600 size=0xCA00 VSz=0xC900
+======================================================================
+--- ASCII (614) ---
+  wsad
+  Enter
+  SqrtSecond
+  P.S.
+  Enter
+  pause
+  %d:%d
+        
+        
+  (%d,%d)
+  (%d,%d)
+  color 4F
+  Windows
+  color 2C
+  color AE
+  color 7A
+  color E4
+  color 58
+  color B6
+  Windows
+  Windows
+  Windows
+  color 07
+  wsad
+  Enter
+  %d:%d
+  %s: __pos (which is %zu) > this->size() (which is %zu)
+  basic_string::at: __n (which is %zu) >= this->size() (which is %zu)
+  basic_string::copy
+  basic_string::compare
+  basic_string::_S_create
+  basic_string::erase
+  basic_string::_M_replace_aux
+  basic_string::insert
+  basic_string::replace
+  basic_string::assign
+  basic_string::append
+  basic_string::resize
+  basic_string::_S_construct null not valid
+  basic_string::basic_string
+  basic_string::substr
+  eh_globals
+  init
+  __gnu_cxx::__concurrence_lock_error
+  __gnu_cxx::__concurrence_unlock_error
+  std::exception
+  std::bad_exception
+  std::future_error
+  __gnu_cxx::__concurrence_lock_error
+  __gnu_cxx::__concurrence_unlock_error
+  ios_base::_M_grow_words is not valid
+  ios_base::_M_grow_words allocation failed
+  basic_ios::clear
+  __gnu_cxx::__concurrence_lock_error
+  __gnu_cxx::__concurrence_unlock_error
+  locale::_S_normalize_category category not found
+  locale::_Impl::_M_replace_facet
+  __terminate_handler_sh
+  __unexpected_handler_sh
+  pure virtual method called
+  deleted virtual method called
+  std::bad_alloc
+  std::bad_cast
+  std::bad_typeid
+  generic
+  system
+  future
+  Broken promise
+  Future already retrieved
+  Promise already satisfied
+  No associated state
+  Unknown error
+  bad_function_call
+  regex_error
+  basic_string::_S_construct null not valid
+  POSIX
+  basic_string::erase
+  %s: __pos (which is %zu) > this->size() (which is %zu)
+  %.*Lf
+  %m/%d/%y
+  %H:%M
+  %H:%M:%S
+  basic_string::_S_construct null not valid
+  POSIX
+  basic_string::erase
+  %s: __pos (which is %zu) > this->size() (which is %zu)
+  %.*Lf
+  %m/%d/%y
+  %H:%M
+  %H:%M:%S
+  POSIX
+  __gnu_cxx::__concurrence_lock_error
+  __gnu_cxx::__concurrence_unlock_error
+  __gnu_cxx::__concurrence_broadcast_error
+  __gnu_cxx::__concurrence_wait_error
+  true
+  false
+  locale::facet::_S_create_c_locale name not valid
+  LC_CTYPE
+  LC_NUMERIC
+  LC_TIME
+  LC_COLLATE
+  LC_MONETARY
+  LC_MESSAGES
+  basic_filebuf::underflow codecvt::max_length() is not valid
+  basic_filebuf::underflow incomplete character in file
+  basic_filebuf::underflow invalid byte sequence in file
+  basic_filebuf::underflow error reading the file
+  basic_filebuf::xsgetn error reading the file
+  basic_filebuf::_M_convert_to_external conversion error
+  %s: __pos (which is %zu) > this->size() (which is %zu)
+  basic_string::at: __n (which is %zu) >= this->size() (which is %zu)
+  basic_string::copy
+  basic_string::compare
+  basic_string::_S_create
+  basic_string::erase
+  basic_string::_M_replace_aux
+  basic_string::insert
+  basic_string::replace
+  basic_string::assign
+  basic_string::append
+  basic_string::resize
+  basic_string::_S_construct null not valid
+  basic_string::basic_string
+  basic_string::substr
+  terminate called recursively
+  terminate called after throwing an instance of '
+  terminate called without an active exception
+    what():  
+  -+xX0123456789abcdef0123456789ABCDEF
+  -+xX0123456789abcdefABCDEF
+  -0123456789
+  AKST
+  %m/%d/%y
+  %H:%M:%S
+  Sunday
+  Monday
+  Tuesday
+  Wednesday
+  Thursday
+  Friday
+  Saturday
+  January
+  February
+  March
+  April
+  June
+  July
+  August
+  September
+  October
+  November
+  December
+  POSIX
+  space
+  print
+  cntrl
+  upper
+  lower
+  alpha
+  digit
+  punct
+  xdigit
+  alnum
+  graph
+  _GLOBAL_
+  (anonymous namespace)
+  [abi:
+  {default arg#
+  JArray
+  vtable for 
+  VTT for 
+  construction vtable for 
+  -in-
+  typeinfo for 
+  typeinfo name for 
+  typeinfo fn for 
+  non-virtual thunk to 
+  virtual thunk to 
+  covariant return thunk to 
+  java Class for 
+  guard variable for 
+  TLS init function for 
+  TLS wrapper function for 
+  reference temporary #
+   for 
+  hidden alias for 
+  transaction clone for 
+  non-transaction clone for 
+  _Sat 
+  _Accum
+  _Fract
+  operator
+  operator 
+  new 
+  false
+  true
+  java resource 
+  decltype (
+  this
+  {parm#
+  global constructors keyed to 
+  global destructors keyed to 
+  {lambda(
+  {unnamed type#
+   [clone 
+   restrict
+   volatile
+   const
+  complex 
+  imaginary 
+   __vector(
+  auto
+  string literal
+  std::allocator
+  allocator
+  std::basic_string
+  basic_string
+  std::string
+  std::basic_string<char, std::char_traits<char>, std::allocator<char> >
+  std::istream
+  std::basic_istream<char, std::char_traits<char> >
+  basic_istream
+  std::ostream
+  std::basic_ostream<char, std::char_traits<char> >
+  basic_ostream
+  std::iostream
+  std::basic_iostream<char, std::char_traits<char> >
+  basic_iostream
+  alignof 
+  const_cast
+  delete[] 
+  dynamic_cast
+  delete 
+  operator"" 
+  new[]
+  reinterpret_cast
+  static_cast
+  sizeof 
+  throw
+  throw 
+  signed char
+  bool
+  boolean
+  char
+  byte
+  double
+  long double
+  float
+  __float128
+  unsigned char
+  unsigned int
+  unsigned
+  long
+  unsigned long
+  __int128
+  unsigned __int128
+  short
+  unsigned short
+  void
+  wchar_t
+  long long
+  unsigned long long
+  decimal32
+  decimal64
+  decimal128
+  half
+  char16_t
+  char32_t
+  decltype(nullptr)
+  std::bad_array_new_length
+  std::bad_array_length
+  Argument domain error (DOMAIN)
+  Argument singularity (SIGN)
+  Overflow range error (OVERFLOW)
+  Partial loss of significance (PLOSS)
+  Total loss of significance (TLOSS)
+  The result is too small to be represented (UNDERFLOW)
+  Unknown error
+  _matherr(): %s in %s(%g, %g)  (retval=%g)
+  Mingw-w64 runtime failure:
+  Address %p has no image-section
+    VirtualQuery failed for %d bytes at address %p
+    VirtualProtect failed with code 0x%x
+    Unknown pseudo relocation protocol version %d.
+    Unknown pseudo relocation bit size %d.
+  .pdata
+  INITY
+  alnum
+  alpha
+  cntrl
+  digit
+  graph
+  lower
+  print
+  punct
+  space
+  upper
+  xdigit
+  (null)
+  PRINTF_EXPONENT_DIGITS
+  inity
+  Infinity
+  ?aCoc
+  <2ZGU
+  vH7B
+  W4vC
+  [%Co
+  O8M2
+  ABCDEF
+  abcdef
+  0123456789
+  _set_output_format
+  _get_output_format
+  idListCnt_shmem
+  idList_shmem
+  once_global_shmem
+  once_obj_shmem
+  %p not found?!?!
+  idListMax_shmem
+  idListNextId_shmem
+  mtx_pthr_locked_shmem
+  pthr_root_shmem
+  pthr_last_shmem
+  _pthread_tls_shmem
+   once %p is %d
+  _pthread_tls_once_shmem
+  _pthread_key_dest_shmem
+  _pthread_cancelling_shmem
+  _pthread_concur_shmem
+  _pthread_key_lock_shmem
+  _pthread_key_max_shmem
+  _pthread_key_sch_shmem
+  T%p %d %s
+  T%p %d V=%0X H=%p %s
+  dummy_concurrency_level_shmem
+  mutex_global_shmem
+  C:/crossdev/src/winpthreads-git20141130/src/mutex.c
+  (m_->valid == LIFE_MUTEX) && (m_->busy > 0)
+  Assertion failed: (%s), file %s, line %d
+  mutex_global_static_shmem
+  M%p %d %s
+  M%p %d V=%0X B=%d t=%d o=%d C=%d R=%d H=%p %s
+  mxattr_recursive_shmem
+  mxattr_errorcheck_shmem
+  C%p %d %s
+  C%p %d V=%0X w=%ld %s
+  cond_locked_shmem_cond
+  global_lock_spinlock
+  rwl_global_shmem
+  C:/crossdev/src/winpthreads-git20141130/src/rwlock.c
+  (((rwlock_t *)*rwl)->valid == LIFE_RWLOCK) && (((rwlock_t *)*rwl)->busy > 0)
+  Assertion failed: (%s), file %s, line %d
+  cond_locked_shmem_rwlock
+  RWL%p %d %s
+  RWL%p %d V=%0X B=%d r=%ld w=%ld L=%p %s
+  N10__cxxabiv115__forced_unwindE
+  N10__cxxabiv117__class_type_infoE
+  N10__cxxabiv119__foreign_exceptionE
+  N10__cxxabiv120__si_class_type_infoE
+  N10__cxxabiv121__vmi_class_type_infoE
+  *N12_GLOBAL__N_121future_error_categoryE
+  *N12_GLOBAL__N_121system_error_categoryE
+  *N12_GLOBAL__N_122generic_error_categoryE
+  N9__gnu_cxx13stdio_filebufIcSt11char_traitsIcEEE
+  N9__gnu_cxx13stdio_filebufIwSt11char_traitsIwEEE
+  N9__gnu_cxx18stdio_sync_filebufIcSt11char_traitsIcEEE
+  N9__gnu_cxx18stdio_sync_filebufIwSt11char_traitsIwEEE
+  N9__gnu_cxx24__concurrence_lock_errorE
+  N9__gnu_cxx24__concurrence_wait_errorE
+  N9__gnu_cxx26__concurrence_unlock_errorE
+  N9__gnu_cxx29__concurrence_broadcast_errorE
+  NSt13__future_base12_Result_baseE
+  NSt6locale5facetE
+  NSt8ios_base7failureE
+  St10bad_typeid
+  St10ctype_base
+  St10money_base
+  St10moneypunctIcLb0EE
+  St10moneypunctIcLb1EE
+  St10moneypunctIwLb0EE
+  St10moneypunctIwLb1EE
+  St11__timepunctIcE
+  St11__timepunctIwE
+  St11logic_error
+  St11range_error
+  St11regex_error
+  St12codecvt_base
+  St12ctype_bynameIcE
+  St12ctype_bynameIwE
+  St12domain_error
+  St12future_error
+  St12length_error
+  St12out_of_range
+  St12system_error
+  St13bad_exception
+  St13basic_filebufIcSt11char_traitsIcEE
+  St13basic_filebufIwSt11char_traitsIwEE
+  St13basic_fstreamIcSt11char_traitsIcEE
+  St13basic_fstreamIwSt11char_traitsIwEE
+  St13basic_istreamIwSt11char_traitsIwEE
+  St13basic_ostreamIwSt11char_traitsIwEE
+  St13messages_base
+  St13runtime_error
+  St14basic_ifstreamIcSt11char_traitsIcEE
+  St14basic_ifstreamIwSt11char_traitsIwEE
+  St14basic_iostreamIwSt11char_traitsIwEE
+  St14basic_ofstreamIcSt11char_traitsIcEE
+  St14basic_ofstreamIwSt11char_traitsIwEE
+  St14codecvt_bynameIcciE
+  St14codecvt_bynameIwciE
+  St14collate_bynameIcE
+  St14collate_bynameIwE
+  St14error_category
+  St14overflow_error
+  St15basic_streambufIcSt11char_traitsIcEE
+  St15basic_streambufIwSt11char_traitsIwEE
+  St15messages_bynameIcE
+  St15messages_bynameIwE
+  St15numpunct_bynameIcE
+  St15numpunct_bynameIwE
+  St15time_get_bynameIcSt19istreambuf_iteratorIcSt11char_traitsIcEEE
+  St15time_get_bynameIwSt19istreambuf_iteratorIwSt11char_traitsIwEEE
+  St15time_put_bynameIcSt19ostreambuf_iteratorIcSt11char_traitsIcEEE
+  St15time_put_bynameIwSt19ostreambuf_iteratorIwSt11char_traitsIwEEE
+  St15underflow_error
+  St16__numpunct_cacheIcE
+  St16__numpunct_cacheIwE
+  St16bad_array_length
+  St16invalid_argument
+  St17__timepunct_cacheIcE
+  St17__timepunct_cacheIwE
+  St17bad_function_call
+  St17moneypunct_bynameIcLb0EE
+  St17moneypunct_bynameIcLb1EE
+  St17moneypunct_bynameIwLb0EE
+  St17moneypunct_bynameIwLb1EE
+  St18__moneypunct_cacheIcLb0EE
+  St18__moneypunct_cacheIcLb1EE
+  St18__moneypunct_cacheIwLb0EE
+  St18__moneypunct_cacheIwLb1EE
+  St20bad_array_new_length
+  St21__ctype_abstract_baseIcE
+  St21__ctype_abstract_baseIwE
+  St23__codecvt_abstract_baseIcciE
+  St23__codecvt_abstract_baseIwciE
+  St5ctypeIcE
+  St5ctypeIwE
+  St7codecvtIcciE
+  St7codecvtIwciE
+  St7collateIcE
+  St7collateIwE
+  St7num_getIcSt19istreambuf_iteratorIcSt11char_traitsIcEEE
+  St7num_getIwSt19istreambuf_iteratorIwSt11char_traitsIwEEE
+  St7num_putIcSt19ostreambuf_iteratorIcSt11char_traitsIcEEE
+  St7num_putIwSt19ostreambuf_iteratorIwSt11char_traitsIwEEE
+  St8bad_cast
+  St8ios_base
+  St8messagesIcE
+  St8messagesIwE
+  St8numpunctIcE
+  St8numpunctIwE
+  St8time_getIcSt19istreambuf_iteratorIcSt11char_traitsIcEEE
+  St8time_getIwSt19istreambuf_iteratorIwSt11char_traitsIwEEE
+  St8time_putIcSt19ostreambuf_iteratorIcSt11char_traitsIcEEE
+  St8time_putIwSt19ostreambuf_iteratorIwSt11char_traitsIwEEE
+  St9bad_alloc
+  St9basic_iosIcSt11char_traitsIcEE
+  St9basic_iosIwSt11char_traitsIwEE
+  St9exception
+  St9money_getIcSt19istreambuf_iteratorIcSt11char_traitsIcEEE
+  St9money_getIwSt19istreambuf_iteratorIwSt11char_traitsIwEEE
+  St9money_putIcSt19ostreambuf_iteratorIcSt11char_traitsIcEEE
+  St9money_putIwSt19ostreambuf_iteratorIwSt11char_traitsIwEEE
+  St9time_base
+  St9type_info
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (tdm64-1) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+  GCC: (GNU) 4.9.2
+--- UTF-8 中文 (1) ---
+  V瞯
+--- UTF-16 中文 (1296) ---
+  쯍ꪡꪡ੥  딀잱쮰뛙ꏈ►੤
+  뒰붷쿉싏ﲼ탐쏖겣뱅췼돋૶뀀ힴ폳볒뷼탸짐훨ꏃ䖬ﲼ쯍
+  ꪿볊컓럏ꄠꆪ₪ੳ팀쿎쮷쎵⃷ꪡꪡ栠
+  쏖ꄠꆪ₪ੰ촀돋⃶ꪡꪡ攠
+  웖쯈몣煓瑲敓潣摮
+  ꢣ⹐⹓뒰湅整뭲뿲룕볱뿼뿉쯬쳙맸뻽쟧ꏩ©럈ꢶ꫒꪿뾣
+  쟊ꄠꆪ₪੹뜀⃱ꪡꪡ渠
+  睱q쟄듃겣꪿볊컓럏즰ꆣ
+  慰獵e꫒닊듃ꏄ뷊뾣
+  ꯋ쯈ꪡꪡ੣먀뗃ꏄ뾬쪪낼ꏉ¡퟊죏겣쟊믒ꯋ쯈컓럏ꎡ
+  僚뺱춺볗쒵﷈폗곍ꎡ
+  ꯋ붷꫒뿃쯈훂싏믒훊ꎡ
+  뿃쯈싏믒훊겣벶ꖴꊷ믒請쒵싊ﺼꎡ
+  ﷕쟊컓럏쒵쎺껖ꚴꎡ
+  궡궡
+  ꖴꊷ됵짎쏱쫘볂ꏾ랬퓱뫲맳ퟻ룔ꆺꆭભ휀놼몸쇃뻋뿍쪪낼ꏉડ넀럈ꏖ►㩤搥ਊꠀ₏††ꠠꄀÁ躨†††趨뤀쾧쮲랫뒽돲웉뺽ꏖડ촀볦Ò튼1쯈請촀볦㋒─뭳뗱쇃쫋삤ꏻડ쨀볂럾즢ꏺડ케돻룽ퟱ⣓搥┬⥤ꆣ
+  됵짎쏱쫘볂듾웕쇫ꇋꆭભ
+  潣潬⁲㜰
+  쯈請욼탖궡궡툀풪췙틦뺻싖ꏰિ픀퓽볚쯆ퟣ훮뗕럃ꇖꆭભ휀훮뗕쫄삤헻쫟ꏇ઺─ꍳડ휀훮뷕맡쫻ꇇꆭભ였뺽ꏖ¡쟃쒵좱횷꫎몣搥┺ꅤણ묀펶쾭듂퓎췙ꏦડ
+  휊炣꨽䁀竡긔핇䂄竡긔핇䁴銀￹鋀￹鋰￹錀￹銀￹鍐￹鍐￹鍐￹鍐￹錠￹銰￹錐￹銀￹
+  猥›彟潰⁳眨楨档椠⁳稥⥵㸠琠楨⵳猾穩⡥ 眨楨档椠⁳稥⥵
+  慢楳彣瑳楲杮㨺瑡›彟⁮眨楨档椠⁳稥⥵㸠‽桴獩㸭楳敺⤨⠠桷捩⁨獩┠畺)慢楳彣瑳楲杮㨺潣祰戀獡捩獟牴湩㩧挺浯慰敲戀獡捩獟牴湩㩧强当牣慥整戀獡捩獟牴湩㩧攺慲敳戀獡捩獟牴湩㩧强彍敲汰捡彥畡x慢楳彣瑳楲杮㨺湩敳瑲戀獡捩獟牴湩㩧爺灥慬散戀獡捩獟牴湩㩧愺獳杩n慢楳彣瑳楲杮㨺灡数摮戀獡捩獟牴湩㩧爺獥穩e慢楳彣瑳楲杮㨺卟损湯瑳畲瑣渠汵⁬潮⁴慶楬d慢楳彣瑳楲杮㨺慢楳彣瑳楲杮戀獡捩獟牴湩㩧猺扵瑳r
+  桥束潬慢獬椀楮t彟湧彵硣㩸强损湯畣牲湥散江捯彫牥潲r
+  彟湧彵硣㩸强损湯畣牲湥散畟汮捯彫牥潲r
+  瑳㩤攺捸灥楴湯猀摴㨺慢彤硥散瑰潩n
+  瑳㩤昺瑵牵彥牥潲r
+  彟湧彵硣㩸强损湯畣牲湥散江捯彫牥潲r
+  彟湧彵硣㩸强损湯畣牲湥散畟汮捯彫牥潲r*潩彳慢敳㨺䵟束潲彷潷摲⁳獩渠瑯瘠污摩
+  潩彳慢敳㨺䵟束潲彷潷摲⁳污潬慣楴湯映楡敬d
+  慢楳彣潩㩳挺敬牡
+  潬慣敬㨺卟湟牯慭楬敺损瑡来牯⁹慣整潧祲渠瑯映畯摮
+  톌�턠�텼�텬�템�테�
+  潬慣敬㨺䥟灭㩬强彍敲汰捡彥慦散t彟整浲湩瑡彥慨摮敬彲桳
+  彟湵硥数瑣摥桟湡汤牥獟h
+  異敲瘠物畴污洠瑥潨⁤慣汬摥
+  敤敬整⁤楶瑲慵⁬敭桴摯挠污敬੤
+  瑳㩤戺摡慟汬捯
+  瑳㩤戺摡损獡t
+  瑳㩤戺摡瑟灹楥d敧敮楲c祳瑳浥
+  畦畴敲䈀潲敫⁮牰浯獩e畆畴敲愠牬慥祤爠瑥楲癥摥倀潲業敳愠牬慥祤猠瑡獩楦摥一⁯獡潳楣瑡摥猠慴整唀歮潮湷攠牲牯
+  慢彤畦据楴湯损污l
+  敲敧彸牥潲r
+  慢楳彣瑳楲杮㨺卟损湯瑳畲瑣渠汵⁬潮⁴慶楬dC佐䥓X慢楳彣瑳楲杮㨺牥獡e
+  뺤￻빱￻빐￻뵥￻뺐￻랰￻락￻띜￻뙱￻랜￻⸥䰪f津┯⽤礥─㩈䴥─㩈䴥┺S
+  ⻸￻⸘￻ⴽ￻ⴚ￻⇛￻⇛￻⇛￻ⲩ￻ⰸ￻⇛￻⇛￻⇛￻⮽￻⇛￻⇛￻⇛￻⇛￻⮚￻⬭￻⪸￻⇛￻⇛￻⇛￻⩨￻ⴽ￻⟈￻⇛￻⇛￻⇛￻⇛￻⇛￻⇛￻⛘￻╨￻┙￻⒈￻⏭￻⇛￻⇛￻╨￻⇛￻⇛￻⇛￻⇛￻⌝￻⋈￻⇛￻⇛￻⇛￻⇛￻⇛￻⊈￻⇛￻⇛￻⇛￻⇨￻ⴽ￻竩￻緖￻紘￻糵￻筤￻沵￻澢￻滤￻滁￻洰￻
+  칠￻츄￻췣￻쵰￻캀￻왜￻였￻엟￻앬￻왼￻⸥䰪f津┯⽤礥─㩈䴥─㩈䴥┺S
+  䭈￻䱘￻䶸￻亨￻䩊￻䩊￻䩊￻优￻侸￻䩊￻䩊￻䩊￻倸￻䩊￻䩊￻䩊￻䩊￻傸￻僙￻克￻䩊￻䩊￻䩊￻公￻䶸￻冸￻䩊￻䩊￻䩊￻䩊￻䩊￻䩊￻员￻哘￻喻￻嘈￻嚈￻䩊￻䩊￻哘￻䩊￻䩊￻䩊￻䩊￻坉￻堨￻䩊￻䩊￻䩊￻䩊￻䩊￻䨨￻䩊￻䩊￻䩊￻䪘￻䶸￻诉￻遒￻辉￻轤￻豌￻髥￻齮￻麥￻麀￻魨￻
+  C佐䥓X
+  彟湧彵硣㩸强损湯畣牲湥散扟潲摡慣瑳敟牲牯
+  彟湧彵硣㩸强损湯畣牲湥散睟楡彴牥潲r
+  琀畲e慦獬etrue
+  潬慣敬㨺慦散㩴强当牣慥整损江捯污⁥慮敭渠瑯瘠污摩䰀彃呃偙E䍌也䵕剅䍉䰀彃䥔䕍䰀彃佃䱌呁E䍌䵟乏呅剁Y䍌䵟卅䅓䕇S
+  慢楳彣楦敬畢㩦町摮牥汦睯挠摯捥瑶㨺慭彸敬杮桴⤨椠⁳潮⁴慶楬d
+  慢楳彣楦敬畢㩦町摮牥汦睯椠据浯汰瑥⁥档牡捡整⁲湩映汩e
+  慢楳彣楦敬畢㩦町摮牥汦睯椠癮污摩戠瑹⁥敳畱湥散椠⁮楦敬
+  慢楳彣楦敬畢㩦町摮牥汦睯攠牲牯爠慥楤杮琠敨映汩e慢楳彣楦敬畢㩦砺杳瑥⁮牥潲⁲敲摡湩⁧桴⁥楦敬
+  慢楳彣楦敬畢㩦强彍潣癮牥彴潴敟瑸牥慮⁬潣癮牥楳湯攠牲牯
+  wa⭡br⭲眀+⭡眀b扡爀b⭲b⭷b迌￹輌￹迌￹迌￹迌￹輬￹迌￹迌￹轼￹輼￹迌￹迌￹转￹轌￹迌￹迌￹轜￹輌￹迌￹迌￹輜￹輬￹迌￹迌￹辜￹輼￹迌￹迌￹辬￹轌￹迌￹迌￹迌￹迌￹迌￹迌￹迌￹迌￹迌￹迌￹迌￹迌￹迌￹迌￹迌￹迌￹迌￹迌￹轜￹迌￹迌￹迌￹輜￹迌￹迌￹迌￹辌￹迌￹迌￹迌￹込￹
+  整浲湩瑡⁥慣汬摥爠捥牵楳敶祬
+  整浲湩瑡⁥慣汬摥愠瑦牥琠牨睯湩⁧湡椠獮慴据⁥景✠✀
+  整浲湩瑡⁥慣汬摥眠瑩潨瑵愠⁮捡楴敶攠捸灥楴湯
+  †桷瑡⤨› 
+  ⬭塸㄰㌲㔴㜶㤸扡摣晥㄰㌲㔴㜶㤸䉁䑃䙅ⴀ砫じ㈱㐳㘵㠷愹换敤䅦䍂䕄F〭㈱㐳㘵㠷9GMT
+  䵇T午T䭁呓倀呓䴀呓䌀呓䔀呓䄀呓一呓䌀呅䤀呓䔀呅䨀呓
+  津┯⽤礥─㩈䴥┺S䄀M䵐匀湵慤y潍摮祡吀敵摳祡圀摥敮摳祡吀畨獲慤y牆摩祡匀瑡牵慤y畓n潍n畔e敗d桔u牆i慓t慊畮牡y敆牢慵祲䴀牡档䄀牰汩䴀祡䨀湵e畊祬䄀杵獵t敓瑰浥敢r捏潴敢r潎敶扭牥䐀捥浥敢r慊n敆b慍r灁r畊n畊l畁g敓p捏t潎v敄c%m/%d/%y
+  C佐䥓X灳捡e牰湩t湣牴l灵数r潬敷r污桰a楤楧t異据t摸杩瑩愀湬浵最慲桰
+  絀￷細￷細￷細￷細￷絀￷絀￷絀￷絀￷糰￷糰￷細￷糰￷糰￷糰￷糰￷糰￷糰￷糰￷糰￷糰￷糰￷糰￷糰￷絀￷糵￷糵￷糵￷糵￷糵￷糵￷糵￷糵￷細￷糰￷糰￷糰￷糰￷糰￷絀￷糰￷糵￷紵￷細￷絀￷細￷糵￷糵￷紵￷絀￷絀￷糰￷糰￷細￷細￷細￷細￷細￷糰￷細￷細￷糰￷細￷絀￷絀￷糰￷糰￷糰￷絀￷絀￷絀￷糰￷糰￷糰￷細￷細￷耙￷耾￷耾￷耾￷聓￷耙￷耙￷耐￷耐￷耾￷耾￷耾￷耾￷耾￷耾￷耾￷耾￷耾￷耾￷耾￷耾￷耾￷耾￷耾￷耙￷耾￷耾￷耾￷耾￷耾￷耾￷耾￷耾￷耾￷耾￷耰￷耰￷耾￷耾￷耙￷耾￷耾￷耾￷耾￷耾￷耾￷耾￷耾￷耾￷耙￷耐￷耾￷耾￷耾￷耾￷耾￷耾￷耾￷耾￷耾￷耾￷耾￷耾￷耙￷耙￷耾￷耢￷耢￷耢￷耢￷耙￷耾￷耾￷耾￷耾￷耾￷䝟佌䅂彌⠀湡湯浹畯⁳慮敭灳捡⥥
+  莀￷荠￷荠￷荠￷荠￷莐￷莀￷荱￷荱￷荠￷荠￷荠￷荠￷荠￷荠￷荠￷荠￷荠￷荠￷荠￷荠￷荠￷荠￷荠￷莀￷荠￷荠￷荠￷荠￷荠￷荠￷荠￷荠￷荠￷荠￷荠￷荠￷荠￷荠￷莀￷荠￷荠￷荠￷荠￷荠￷荠￷荠￷荠￷荠￷莀￷荱￷荠￷荠￷荠￷荠￷荠￷荠￷荠￷荠￷荠￷荠￷荠￷荠￷莀￷荠￷荠￷荠￷荠￷莀￷荠￷莀￷荠￷荠￷莀￷莀￷氥d慛楢:㨺笀敤慦汵⁴牡⍧紀㨺䨀牁慲y嵛瘀慴汢⁥潦⁲嘀呔映牯 潣獮牴捵楴湯瘠慴汢⁥潦⁲ⴀ湩-祴数湩潦映牯 祴数湩潦渠浡⁥潦⁲琀灹楥普⁯湦映牯 潮⵮楶瑲慵⁬桴湵⁫潴 楶瑲慵⁬桴湵⁫潴 潣慶楲湡⁴敲畴湲琠畨歮琠⁯樀癡⁡汃獡⁳潦⁲最慵摲瘠牡慩汢⁥潦⁲吀卌椠楮⁴畦据楴湯映牯 䱔⁓牷灡数⁲畦据楴湯映牯 敲敦敲据⁥整灭牯牡⁹#映牯 楨摤湥愠楬獡映牯 牴湡慳瑣潩⁮汣湯⁥潦⁲渀湯琭慲獮捡楴湯挠潬敮映牯 卟瑡 䅟捣浵开牆捡t‬漀数慲潴r灯牥瑡牯 摡最s瑳挀l硩焀u㨠 敮⁷甀l汬甀汬昀污敳琀畲e慪慶爠獥畯捲⁥搀捥瑬灹⁥(⸮.桴獩笀慰浲#汧扯污挠湯瑳畲瑣牯⁳敫敹⁤潴 汧扯污搠獥牴捵潴獲欠祥摥琠⁯笀慬扭慤(〈笀湵慮敭⁤祴数#嬠汣湯⁥㸀(銵￷鈤￷鈤￷錺￷酏￷鄆￷郦￷郒￷邕￷顩￷韵￷鐵￷鎼￷陁￷阞￷飥￷轺￷雍￷險￷隇￷除￷鞅￷雰￷逘￷辝￷闚￷闚￷闚￷闏￷闏￷闏￷闏￷闏￷闏￷闏￷锷￷锷￷闏￷闏￷钩￷韡￷鞨￷蹄￷跛￷資￷跛￷谢￷谢￷讥￷謟￷趸￷趕￷謋￷諌￷觧￷觘￷褴￷褥￷褥￷苋￷苋￷袪￷袇￷衕￷蜕￷蚗￷虴￷虑￷蘄￷餈￷藕￷蟗￷蕘￷葷￷菴￷莸￷ꍀ￷ꌮ￷ꌚ￷ꌆ￷ꍒ￷爠獥牴捩t瘠汯瑡汩e挠湯瑳☀&潣灭敬⁸椀慭楧慮祲 㨺*张癟捥潴⡲
+  ꧀￷ꤲ￷ꤲ￷ꤲ￷ꤲ￷ꤲ￷ꤲ￷ꤲ￷ꤲ￷ꤲ￷ꤲ￷ꤲ￷ꤲ￷ꤲ￷ꤲ￷ꤲ￷ꤲ￷ꤲ￷ꤲ￷ꤲ￷ꤲ￷ꤲ￷꧐￷꩐￷꫐￷꧐￷꩐￷꫐￷ꭐ￷ꮰ￷꤀￷걐￷겐￷겠￷결￷괰￷ꤲ￷ꤲ￷ꤲ￷ꤲ￷궰￷ꤲ￷ꥃ￷⠠搀t瑰愀瑵o
+  쁄￷쁄￷쁄￷쁄￷쁄￷쁄￷쁄￷쁄￷쁄￷쁄￷뼤￷뼤￷뼤￷뼤￷뼤￷뼤￷뼤￷쁔￷뼤￷살￷설￷뼤￷샤￷샶￷뼤￷뼤￷뼤￷뼤￷뼤￷셤￷쁄￷솴￷쇤￷뼤￷숔￷쉄￷썄￷스￷뼤￷뼤￷뼤￷뼤￷쁄￷뼤￷뼤￷뼤￷뼤￷뼤￷뼤￷실￷실￷실￷실￷실￷실￷실￷실￷실￷실￷뼤￷실￷실￷실￷실￷뼤￷뼤￷뼤￷실￷실￷뿔￷실￷실￷실￷실￷실￷쒘￷뷸￷뷸￷뷸￷뷸￷뷸￷뷸￷뷸￷뷸￷뷸￷뷸￷뷸￷뷸￷뷸￷봊￷뷸￷뷸￷뷸￷뷸￷뷸￷뷸￷뷸￷뷸￷뷸￷뷸￷뷸￷뷸￷쑾￷뷸￷뷸￷쐺￷쌼￷싸￷뷸￷슴￷쉰￷뷸￷뷸￷뷸￷뷸￷쏶￷뷸￷쏑￷뷸￷뷸￷쎍￷봊￷뷸￷쎀￷楬
+  횊￷훤￷훼￷혁￷훬￷훴￷휛￷힁￷흹￷흱￷흩￷瑳楲杮氠瑩牥污猀摴
+  ３￷ﳁ￷ﳁ￷ﳁ￷ﳁ￷ﳁ￷ﳁ￷ﳁ￷ﳁ￷ﳁ￷ﳁ￷ﳁ￷ﳁ￷ﳁ￷ﳁ￷ﳁ￷ﳁ￷ﻰ￷ﳁ￷Ｐ￷ﳁ￷ﻓ￷ﳁ￷ﳁ￷ﳁ￷ﳁ￷ﳁ￷ﳁ￷ﳁ￷ﳁ￷ﳁ￷ﳁ￷ﳁ￷ﳁ￷ﳁ￷ﳁ￷ﳁ￷ﳁ￷ﳁ￷ﳁ￷ﳁ￷ﳁ￷ﳁ￷ﳁ￷ﳁ￷ﳁ￷ﳁ￷ﳁ￷ﳁ￷ﷰ￷
+  ￸ﯹ￷ﯹ￷￮￷ﯹ￷ￖ￷ﾾ￷ﾦ￷ﯹ￷ﯹ￷ﯹ￷ﯹ￷ﯹ￷ﯹ￷ﯹ￷ﯹ￷ﾎ￷ｰ￷ﯹ￷ｒ￷＋￷ﯹ￷ﯹ￷ﯹ￷ﯹ￷ﯹ￷ﯹ￷ﯹ￷ﯹ￷ﯹ￷ﯹ￷ﯹ￷ﻍ￷ﯹ￷ﯹ￷ﯹ￷ﯹ￷Ｃ￷ﯹ￷ﯹ￷ﯹ￷ﯹ￷ﯹ￷ﯹ￷ﯹ￷ﯹ￷ﯹ￷ﯹ￷ﯹ￷ﯹ￷ﯹ￷ﺞ￷瑳㩤愺汬捯瑡牯愀汬捯瑡牯猀摴㨺慢楳彣瑳楲杮戀獡捩獟牴湩g瑳㩤猺牴湩g
+  瑳㩤戺獡捩獟牴湩㱧档牡‬瑳㩤挺慨彲牴楡獴挼慨㹲‬瑳㩤愺汬捯瑡牯挼慨㹲㸠猀摴㨺獩牴慥m
+  瑳㩤戺獡捩楟瑳敲浡挼慨Ⱳ猠摴㨺档牡瑟慲瑩㱳档牡‾>慢楳彣獩牴慥m瑳㩤漺瑳敲浡
+  瑳㩤戺獡捩潟瑳敲浡挼慨Ⱳ猠摴㨺档牡瑟慲瑩㱳档牡‾>慢楳彣獯牴慥m瑳㩤椺獯牴慥m
+  瑳㩤戺獡捩楟獯牴慥㱭档牡‬瑳㩤挺慨彲牴楡獴挼慨㹲㸠戀獡捩楟獯牴慥m
+  핋H
+  훨H
+  훷H
+  휁H
+  휓H
+  휠H
+  휰H
+  흷H
+  히H
+  ힺH
+  ퟈H
+  ퟘH
+  乡☀=卡㴀愀a&湡愀t污杩潮⁦愀z捣挀湯瑳损獡t⤨挀m,潣縀搀V㴯搀a敤敬整嵛 捤搀湹浡捩损獡t敤⨀搀l敤敬整 獤⸀*.癤⼀攀O㵞攀o^煥㴀=敧㸀=瑧㸀氀S㰼=敬㰀=灯牥瑡牯∢ 獬㰀<瑬㰀洀I㴭洀L㴪洀i-汭洀mⴭ渀a敮孷]敮℀=杮渀t!睮渀睥漀R㵼漀o籼漀r|䱰⬀=汰⬀瀀m㸭*灰⬀+獰ⴀ>?䵲─=卲㸀㴾爀c敲湩整灲敲彴慣瑳爀m%獲㸀>捳猀慴楴彣慣瑳猀穩潥⁦猀z牴琀牨睯琀w桴潲⁷
+  툷H
+  퀜H
+  퀥H
+  팏H
+  퀟H
+  칶H
+  퀨H
+  캒H
+  플H
+  팒H
+  퀫H
+  퀢H
+  楳湧摥挠慨r潢汯戀潯敬湡挀慨r祢整搀畯汢e潬杮搠畯汢e汦慯t彟汦慯ㅴ㠲甀獮杩敮⁤档牡椀瑮甀獮杩敮⁤湩t湵楳湧摥氀湯g湵楳湧摥氠湯g彟湩ㅴ㠲甀獮杩敮⁤彟湩ㅴ㠲猀潨瑲甀獮杩敮⁤桳牯t潶摩眀档牡瑟氀湯⁧潬杮甀獮杩敮⁤潬杮氠湯g敤楣慭㍬2敤楣慭㙬4敤楣慭ㅬ㠲栀污f档牡㘱瑟挀慨㍲弲t敤汣祴数渨汵灬牴)
+  H
+  H
+  H
+  H
+  H
+  H
+  H
+  H
+  H
+  H
+  H
+  H
+  H
+  H
+  H
+  H
+  H
+  H
+  H
+  H
+  H
+  H
+  H
+  큦H
+  H
+  H
+  H
+  H
+  H
+  H
+  H
+  瑳㩤戺摡慟牲祡湟睥江湥瑧h
+  瑳㩤戺摡慟牲祡江湥瑧h
+  牁畧敭瑮搠浯楡⁮牥潲⁲䐨䵏䥁⥎䄀杲浵湥⁴楳杮汵牡瑩⁹匨䝉⥎
+  癏牥汦睯爠湡敧攠牲牯⠠噏剅䱆坏)慐瑲慩⁬潬獳漠⁦楳湧晩捩湡散⠠䱐协⥓
+  潔慴⁬潬獳漠⁦楳湧晩捩湡散⠠䱔协⥓
+  桔⁥敲畳瑬椠⁳潴⁯浳污⁬潴戠⁥敲牰獥湥整⁤唨䑎剅䱆坏)湕湫睯⁮牥潲r
+  浟瑡敨牲⤨›猥椠⁮猥┨Ⱨ┠⥧†爨瑥慶㵬朥਩
+  ⚌￸◍￸☼￸♌￸♜￸♬￸♼￸楍杮⵷㙷‴畲瑮浩⁥慦汩牵㩥
+  摁牤獥⁳瀥栠獡渠⁯浩条ⵥ敳瑣潩n†楖瑲慵公敵祲映楡敬⁤潦⁲搥戠瑹獥愠⁴摡牤獥⁳瀥
+  †楖瑲慵偬潲整瑣映楡敬⁤楷桴挠摯⁥砰砥
+  †湕湫睯⁮獰略潤爠汥捯瑡潩⁮牰瑯捯汯瘠牥楳湯┠⹤
+  †湕湫睯⁮獰略潤爠汥捯瑡潩⁮楢⁴楳敺┠⹤
+  瀮慤慴
+  릀J
+  뒀J
+  ᬠA
+  䓰￸䓀￸䒱￸䒐￸䓠￸䓀￸
+  䕰￸䕴￸䖠￸䖱￸䕠￸䔠￸䕰￸
+  义F义呉Y䅎N
+  Ѐ즿踛䀴
+   뺼䀙
+  鱀䀌
+  저䀅
+  ꀀ䀂
+  耀㿿
+  污畮m污桰a湣牴l楤楧t牧灡h潬敷r牰湩t異据t灳捡e灵数r摸杩瑩
+  H
+  H
+  H
+  H
+  H
+  H
+  H
+  H
+  H
+  H
+  H
+  慎N湉f(null)
+  渨汵⥬倀䥒呎彆塅佐䕎呎䑟䝉呉S獌￸珌￸珌￸猬￸珌￸獾￸珌￸獬￸珌￸珌￸玌￸猌￸珌￸独￸狌￸珌￸犬￸珌￸珌￸珌￸珌￸珌￸珌￸珌￸珌￸珌￸珌￸珌￸珌￸珌￸珌￸珌￸珌￸牾￸珌￸牌￸珌￸爝￸燯￸燁￸珌￸熜￸珌￸珌￸熁￸珌￸珌￸珌￸珌￸珌￸珌￸琏￸珌￸珌￸珌￸珌￸灜￸珌￸珌￸珌￸珌￸珌￸珌￸珌￸珌￸烬￸珌￸炯￸焬￸瀜￸濜￸潯￸澬￸焬￸潌￸珌￸漜￸滬￸溮￸灜￸湼￸珌￸珌￸渱￸潌￸灜￸珌￸珌￸灜￸珌￸潌￸
+  普椀楮祴愀n筇￸糤￸糤￸糤￸糤￸糤￸糤￸糤￸糤￸糄￸糄￸糄￸糄￸糄￸糤￸糤￸糤￸糤￸糤￸糤￸糤￸糤￸糤￸糤￸糤￸糤￸糤￸糤￸糤￸糤￸糤￸糤￸糄￸糤￸糤￸糤￸糤￸糤￸糤￸糤￸糤￸糤￸糤￸簔￸糤￸絇￸
+  䇟嘖黧ί㳂
+  湉楦楮祴一乡　
+  ꠾￸ꝴ￸ꝴ￸ꢰ￸ꢃ￸
+  㿸䍡捯螧㿒좳譠訨㿆移傟䐓㿓宅鵽ⴖ㲔娲啇䐓㿓
+  䀀䂏
+  蠀䃃
+  樀䃸
+  蒀䄮
+  ዐ䅣
+  힄䆗
+  쵥䇍
+   ꁟ䈂
+  䡶䈷
+  ꈀ᪔䉭
+  ゜䊢
+  Ẑ별䋖
+  ☴毵䌌耀㟠썹䍁ꀀ藘㑗䍶저李셭䎫㴀悑壤䏡豀碵꼝䐕훢᫤䑋햒ٍ䒀
+  覼韘튲㲜ꜳ햨㥉ꜽ䓴࿽㊥鞝쾌먈╛潃撬بૈ
+  耀㟠썹䍁渗딅뢵䚓淋伃䴸ᴲ擄睈媂뼼罳保甕
+  䉁䑃䙅愀换敤f㄰㌲㔴㜶㤸
+  獟瑥潟瑵異彴潦浲瑡开敧彴畯灴瑵晟牯慭t
+  摩楌瑳湃彴桳敭m摩楌瑳獟浨浥漀据彥汧扯污獟浨浥漀据彥扯彪桳敭m瀥渠瑯映畯摮ℿℿ
+  摩楌瑳慍彸桳敭m摩楌瑳敎瑸摉獟浨浥洀硴灟桴彲潬正摥獟浨浥瀀桴彲潲瑯獟浨浥瀀桴彲慬瑳獟浨浥开瑰牨慥彤汴彳桳敭m漠据⁥瀥椠⁳搥
+  灟桴敲摡瑟獬潟据彥桳敭m灟桴敲摡歟祥摟獥彴桳敭m灟桴敲摡损湡散汬湩彧桳敭m灟桴敲摡损湯畣彲桳敭m灟桴敲摡歟祥江捯彫桳敭m灟桴敲摡歟祥浟硡獟浨浥开瑰牨慥彤敫役捳彨桳敭m╔⁰搥┠ੳ吀瀥┠⁤㵖〥⁘㵈瀥┠ੳ搀浵祭损湯畣牲湥祣江癥汥獟浨浥
+  畭整彸汧扯污獟浨浥
+  㩃振潲獳敤⽶牳⽣楷灮桴敲摡⵳楧㉴㄰ㄴ㌱⼰牳⽣畭整⹸c
+  洨ⵟ瘾污摩㴠‽䥌䕆䵟呕塅 ☦⠠彭㸭畢祳㸠〠)
+  獁敳瑲潩⁮慦汩摥›┨⥳‬楦敬┠ⱳ氠湩⁥搥
+  畭整彸汧扯污獟慴楴彣桳敭m╍⁰搥┠ੳ
+  ╍⁰搥嘠┽堰䈠┽⁤㵴搥漠┽⁤㵃搥删┽⁤㵈瀥┠ੳ洀慸瑴彲敲畣獲癩彥桳敭m硭瑡牴敟牲牯档捥彫桳敭m
+  ╃⁰搥┠ੳ䌀瀥┠⁤㵖〥⁘㵷氥⁤猥
+  潣摮江捯敫彤桳敭彭潣摮
+  汧扯污江捯彫灳湩潬正
+  睲彬汧扯污獟浨浥
+  㩃振潲獳敤⽶牳⽣楷灮桴敲摡⵳楧㉴㄰ㄴ㌱⼰牳⽣睲潬正挮
+  ⠨爨汷捯彫⁴⤪爪汷⴩瘾污摩㴠‽䥌䕆剟䱗䍏⥋☠…⠨爨汷捯彫⁴⤪爪汷⴩戾獵⁹‾⤰
+  潣摮江捯敫彤桳敭彭睲潬正刀䱗瀥┠⁤猥
+  坒╌⁰搥嘠┽堰䈠┽⁤㵲氥⁤㵷氥⁤㵌瀥┠ੳ
+  偐G
+  偠G
+  瞀H
+  瞐H
+  諀H
+  譀H
+  诀H
+  豀H
+  賀H
+  赀H
+  跀H
+  躀H
+  轀H
+  退H
+  郀H
+  醀H
+  栠B
+  銀H
+  銐H
+  ⪀E
+  ؐI
+  銠H
+  銰H
+  鋀H
+  鋐H
+  鋠H
+  鋰H
+  錀H
+  䫀E
+  䭠E
+  䰰E
+  删E
+  剠E
+  勀E
+  匠E
+  占E
+  台E
+  E
+  ‰F
+  㵠F
+  䰐F
+  䱰F
+  鍀H
+  鏀H
+  啐F
+  荐F
+  鑀H
+  鑐H
+  鑠H
+  ڰI
+  钠H
+  钰H
+  铀H
+  铐H
+  铠H
+  铰H
+  销H
+  锐H
+  锠H
+  锰H
+  뀰F
+  镀H
+  镐H
+  뻐F
+  镠H
+  镰H
+  門H
+  閐H
+  閠H
+  閰H
+  闀H
+  闐H
+  쵠F
+  闠H
+  闰H
+  阀H
+  阐H
+  陀H
+  鞀H
+  飀H
+  騀H
+  魀H
+  鲀H
+  鷀H
+  鼀H
+  ᑠG
+  㾀I
+  䀀I
+  䋀I
+  䍀I
+  䏀I
+  䐀I
+  䒀I
+  䔀I
+  䖀I
+  䡀I
+  䤀I
+  䥀I
+  䦀I
+  䨀I
+  䮀I
+  䰀I
+  冀I
+  刀I
+  嗀I
+  嗠I
+  嘀I
+  嚀I
+  嚠I
+  囀I
+  夀I
+  夠I
+  奀I
+  奠I
+  妀I
+  婀I
+  嫀I
+  孀I
+  寀I
+  巀I
+  帀I
+  幀I
+  廀I
+  彀I
+  忀I
+  恀I
+  慀I
+  懀I
+  所I
+  拀I
+  捀I
+  掀I
+  揀I
+  搀I
+  搠I
+  撀I
+  擀I
+  攀I
+  敀I
+  䯰G
+  礀I
+  H
+  H
+  윀J
+  흘J
+  흰J
+  흸J
+  힐J
+  ퟠJ
+  놀J
+  움J
+  웈J
+  원J
+  웘J
+  H
+  H
+  J
+  J
+  J
+  J
+  멐J
+  며J
+   A
+  ฀A
+  멠J
+  녀J
+  몀J
+  멈J
+  멄J
+  멀J
+  㴅!쟢5ӧW쳉톰ã鹹Ű瀩ɔຢυ绋ؙ赭৞స࿸馥᧖ꗝ⧎㾂䎥浳ⓡ넙
+  섹H
+  셂H
+  셍H
+  셕H
+  셠H
+  셬H
+  ̂Ѐ
+  ӀI
+  ݀I
+  ޠI
+  ހI
+  ܀I
+  ࠀI
+  ߠI
+  ᒠI
+  ᓠI
+  ᑠI
+  ᢠI
+  ᦠI
+  ᣠI
+  㭐I
+  ⍠I
+  㰐I
+  ⎀I
+  ⍀I
+  ⏀I
+  ␀I
+  ቐI
+  ⑀I
+  ⒀I
+  ᪠I
+  ⓀI
+  ─I
+  ╀I
+  ᠐I
+  ▀I
+  ᠰI
+  ◀I
+  ᫐I
+  ☀I
+  ᫠I
+  ♀I
+  ⊠I
+  ⚀I
+  ⛀I
+  ✀I
+  ❀I
+  ➀I
+  ➠I
+  㲐I
+  ⟀I
+  ⟐I
+  ≠I
+  ⟠I
+  ⟰I
+  ⠀I
+  ⠐I
+  ⠠I
+  ᐰI
+  ᕐI
+  ⡀I
+  ⡠I
+  ⢀I
+  ⢠I
+  ⣀I
+  ⣠I
+  ⣰I
+  ᤰI
+  ⤀I
+  ⤐I
+  ⤰I
+  ἠI
+  ⥐I
+  ὠI
+  ⥰I
+  ᚠI
+  ⦐I
+  ⦰I
+  ⧐I
+  ⧰I
+  ⨐I
+  ⩀I
+  ⪀I
+  ⫀I
+  ⬀I
+  ⭀I
+  ⊀I
+  ⮀I
+  ⯀I
+  ⯠I
+  ⰀI
+  ⱀI
+  ⲀI
+  ⳀI
+  ⴀI
+  ⵀI
+  ᾀI
+  ⵠI
+  ᾠI
+  ⶀI
+  ῀I
+  ⶠI
+  ῠI
+  ⷀI
+  ⷠI
+  ⸀I
+  ⹀I
+  ⺀I
+  ⃀I
+  ⺠I
+  ℀I
+  ⻀I
+  ⅀I
+  ⻠I
+  ⅠI
+  ⼀I
+  ↀI
+  ⾀I
+  ⇀I
+  　I
+  ∀I
+  むI
+  ∠I
+  ㄀I
+  ㄠI
+  ㅀI
+  ㅠI
+  ≀I
+  ㆀI
+  ㆠI
+  ㇀I
+  ㇠I
+  ㈀I
+  ᕠI
+  ㈠I
+  ᖠI
+  ㉀I
+  ᗠI
+  ㉠I
+  ᘠI
+  ㊀I
+  ㊠I
+  ㋀I
+  ㋠I
+  ㌀I
+  ㌠I
+  ᕀI
+  ㍀I
+  ㍠I
+  ᜀI
+  ㎠I
+  ㏠I
+  ㏰I
+  ṠI
+  㐀I
+  ẠI
+  㐐I
+  ỠI
+  㐠I
+  㐰I
+  㑀I
+  㒀I
+  㓀I
+  㔀I
+  㕀I
+  㕐I
+  㕠I
+  ᤠI
+  㕰I
+  㖀I
+  㖐I
+  㖠I
+  ⌰I
+  㗠I
+  㘠I
+  㙠I
+  㚠I
+  㛀I
+  ₠I
+  㜀I
+  㝀I
+  㝠I
+  㞠I
+  㟠I
+  㠠I
+  㡠I
+  㡰I
+  ㅎ弰损硸扡癩ㄱ張晟牯散彤湵楷摮Eㅎ弰损硸扡癩ㄱ強损慬獳瑟灹彥湩潦E
+  ㅎ弰损硸扡癩ㄱ弹晟牯楥湧敟捸灥楴湯E
+  ㅎ弰损硸扡癩㈱弰獟彩汣獡彳祴数楟普䕯
+  ㅎ弰损硸扡癩㈱弱癟業损慬獳瑟灹彥湩潦E
+  个㈱䝟佌䅂彌也ㅟㄲ畦畴敲敟牲牯损瑡来牯䕹
+  个㈱䝟佌䅂彌也ㅟㄲ祳瑳浥敟牲牯损瑡来牯䕹
+  个㈱䝟佌䅂彌也ㅟ㈲敧敮楲彣牥潲彲慣整潧祲E
+  㥎彟湧彵硣ㅸ猳摴潩晟汩扥晵捉瑓ㄱ档牡瑟慲瑩䥳䕣䕅
+  㥎彟湧彵硣ㅸ猳摴潩晟汩扥晵睉瑓ㄱ档牡瑟慲瑩䥳䕷䕅
+  㥎彟湧彵硣ㅸ猸摴潩獟湹彣楦敬畢䥦卣ㅴ挱慨彲牴楡獴捉䕅E
+  㥎彟湧彵硣ㅸ猸摴潩獟湹彣楦敬畢䥦卷ㅴ挱慨彲牴楡獴睉䕅E
+  㥎彟湧彵硣㉸弴损湯畣牲湥散江捯彫牥潲䕲
+  㥎彟湧彵硣㉸弴损湯畣牲湥散睟楡彴牥潲䕲
+  㥎彟湧彵硣㉸弶损湯畣牲湥散畟汮捯彫牥潲䕲
+  㥎彟湧彵硣㉸弹损湯畣牲湥散扟潲摡慣瑳敟牲牯E
+  华ㅴ弳晟瑵牵彥慢敳㈱剟獥汵彴慢敳E
+  华㙴潬慣敬昵捡瑥E
+  华㡴潩彳慢敳昷楡畬敲E
+  瑓〱慢彤祴数摩
+  瑓〱瑣灹彥慢敳
+  瑓〱潭敮役慢敳
+  瑓〱潭敮灹湵瑣捉扌䔰E
+  瑓〱潭敮灹湵瑣捉扌䔱E
+  瑓〱潭敮灹湵瑣睉扌䔰E
+  瑓〱潭敮灹湵瑣睉扌䔱E
+  瑓ㄱ彟楴敭異据䥴䕣
+  瑓ㄱ彟楴敭異据䥴䕷
+  瑓ㄱ潬楧彣牥潲r瑓ㄱ慲杮彥牥潲r瑓ㄱ敲敧彸牥潲r瑓㈱潣敤癣彴慢敳
+  瑓㈱瑣灹彥祢慮敭捉E
+  瑓㈱瑣灹彥祢慮敭睉E
+  瑓㈱潤慭湩敟牲牯
+  瑓㈱畦畴敲敟牲牯
+  瑓㈱敬杮桴敟牲牯
+  瑓㈱畯彴景牟湡敧
+  瑓㈱祳瑳浥敟牲牯
+  瑓㌱慢彤硥散瑰潩n
+  瑓㌱慢楳彣楦敬畢䥦卣ㅴ挱慨彲牴楡獴捉䕅
+  瑓㌱慢楳彣楦敬畢䥦卷ㅴ挱慨彲牴楡獴睉䕅
+  瑓㌱慢楳彣獦牴慥䥭卣ㅴ挱慨彲牴楡獴捉䕅
+  瑓㌱慢楳彣獦牴慥䥭卷ㅴ挱慨彲牴楡獴睉䕅
+  瑓㌱慢楳彣獩牴慥䥭卷ㅴ挱慨彲牴楡獴睉䕅
+  瑓㌱慢楳彣獯牴慥䥭卷ㅴ挱慨彲牴楡獴睉䕅
+  瑓㌱敭獳条獥扟獡e
+  瑓㌱畲瑮浩彥牥潲r
+  瑓㐱慢楳彣晩瑳敲浡捉瑓ㄱ档牡瑟慲瑩䥳䕣E
+  瑓㐱慢楳彣晩瑳敲浡睉瑓ㄱ档牡瑟慲瑩䥳䕷E
+  瑓㐱慢楳彣潩瑳敲浡睉瑓ㄱ档牡瑟慲瑩䥳䕷E
+  瑓㐱慢楳彣景瑳敲浡捉瑓ㄱ档牡瑟慲瑩䥳䕣E
+  瑓㐱慢楳彣景瑳敲浡睉瑓ㄱ档牡瑟慲瑩䥳䕷E
+  瑓㐱潣敤癣彴祢慮敭捉楣E
+  瑓㐱潣敤癣彴祢慮敭睉楣E
+  瑓㐱潣汬瑡彥祢慮敭捉E
+  瑓㐱潣汬瑡彥祢慮敭睉E
+  瑓㐱牥潲彲慣整潧祲
+  瑓㐱癯牥汦睯敟牲牯
+  瑓㔱慢楳彣瑳敲浡畢䥦卣ㅴ挱慨彲牴楡獴捉䕅
+  瑓㔱慢楳彣瑳敲浡畢䥦卷ㅴ挱慨彲牴楡獴睉䕅
+  瑓㔱敭獳条獥扟湹浡䥥䕣
+  瑓㔱敭獳条獥扟湹浡䥥䕷
+  瑓㔱畮灭湵瑣扟湹浡䥥䕣
+  瑓㔱畮灭湵瑣扟湹浡䥥䕷
+  瑓㔱楴敭束瑥扟湹浡䥥卣ㅴ椹瑳敲浡畢彦瑩牥瑡牯捉瑓ㄱ档牡瑟慲瑩䥳䕣䕅
+  瑓㔱楴敭束瑥扟湹浡䥥卷ㅴ椹瑳敲浡畢彦瑩牥瑡牯睉瑓ㄱ档牡瑟慲瑩䥳䕷䕅
+  瑓㔱楴敭灟瑵扟湹浡䥥卣ㅴ漹瑳敲浡畢彦瑩牥瑡牯捉瑓ㄱ档牡瑟慲瑩䥳䕣䕅
+  瑓㔱楴敭灟瑵扟湹浡䥥卷ㅴ漹瑳敲浡畢彦瑩牥瑡牯睉瑓ㄱ档牡瑟慲瑩䥳䕷䕅
+  瑓㔱湵敤晲潬彷牥潲r
+  瑓㘱彟畮灭湵瑣损捡敨捉E
+  瑓㘱彟畮灭湵瑣损捡敨睉E
+  瑓㘱慢彤牡慲役敬杮桴
+  瑓㘱湩慶楬彤牡畧敭瑮
+  瑓㜱彟楴敭異据彴慣档䥥䕣
+  瑓㜱彟楴敭異据彴慣档䥥䕷
+  瑓㜱慢彤畦据楴湯损污l
+  瑓㜱潭敮灹湵瑣扟湹浡䥥䱣ぢ䕅
+  瑓㜱潭敮灹湵瑣扟湹浡䥥䱣ㅢ䕅
+  瑓㜱潭敮灹湵瑣扟湹浡䥥䱷ぢ䕅
+  瑓㜱潭敮灹湵瑣扟湹浡䥥䱷ㅢ䕅
+  瑓㠱彟潭敮灹湵瑣损捡敨捉扌䔰E
+  瑓㠱彟潭敮灹湵瑣损捡敨捉扌䔱E
+  瑓㠱彟潭敮灹湵瑣损捡敨睉扌䔰E
+  瑓㠱彟潭敮灹湵瑣损捡敨睉扌䔱E
+  瑓〲慢彤牡慲役敮彷敬杮桴
+  瑓ㄲ彟瑣灹彥扡瑳慲瑣扟獡䥥䕣
+  瑓ㄲ彟瑣灹彥扡瑳慲瑣扟獡䥥䕷
+  瑓㌲彟潣敤癣彴扡瑳慲瑣扟獡䥥捣䕩
+  瑓㌲彟潣敤癣彴扡瑳慲瑣扟獡䥥捷䕩
+  瑓挵祴数捉E
+  瑓挵祴数睉E
+  瑓挷摯捥瑶捉楣E瑓挷摯捥瑶睉楣E瑓挷汯慬整捉E
+  瑓挷汯慬整睉E
+  瑓渷浵束瑥捉瑓㤱獩牴慥扭晵楟整慲潴䥲卣ㅴ挱慨彲牴楡獴捉䕅E
+  瑓渷浵束瑥睉瑓㤱獩牴慥扭晵楟整慲潴䥲卷ㅴ挱慨彲牴楡獴睉䕅E
+  瑓渷浵灟瑵捉瑓㤱獯牴慥扭晵楟整慲潴䥲卣ㅴ挱慨彲牴楡獴捉䕅E
+  瑓渷浵灟瑵睉瑓㤱獯牴慥扭晵楟整慲潴䥲卷ㅴ挱慨彲牴楡獴睉䕅E
+  瑓戸摡损獡t
+  瑓椸獯扟獡e
+  瑓洸獥慳敧䥳䕣
+  瑓洸獥慳敧䥳䕷
+  瑓游浵異据䥴䕣
+  瑓游浵異据䥴䕷
+  瑓琸浩彥敧䥴卣ㅴ椹瑳敲浡畢彦瑩牥瑡牯捉瑓ㄱ档牡瑟慲瑩䥳䕣䕅
+  瑓琸浩彥敧䥴卷ㅴ椹瑳敲浡畢彦瑩牥瑡牯睉瑓ㄱ档牡瑟慲瑩䥳䕷䕅
+  瑓琸浩彥異䥴卣ㅴ漹瑳敲浡畢彦瑩牥瑡牯捉瑓ㄱ档牡瑟慲瑩䥳䕣䕅
+  瑓琸浩彥異䥴卷ㅴ漹瑳敲浡畢彦瑩牥瑡牯睉瑓ㄱ档牡瑟慲瑩䥳䕷䕅
+  瑓戹摡慟汬捯
+  瑓戹獡捩楟獯捉瑓ㄱ档牡瑟慲瑩䥳䕣E
+  瑓戹獡捩楟獯睉瑓ㄱ档牡瑟慲瑩䥳䕷E
+  瑓改捸灥楴湯
+  瑓洹湯祥束瑥捉瑓㤱獩牴慥扭晵楟整慲潴䥲卣ㅴ挱慨彲牴楡獴捉䕅E
+  瑓洹湯祥束瑥睉瑓㤱獩牴慥扭晵楟整慲潴䥲卷ㅴ挱慨彲牴楡獴睉䕅E
+  瑓洹湯祥灟瑵捉瑓㤱獯牴慥扭晵楟整慲潴䥲卣ㅴ挱慨彲牴楡獴捉䕅E
+  瑓洹湯祥灟瑵睉瑓㤱獯牴慥扭晵楟整慲潴䥲卷ㅴ挱慨彲牴楡獴睉䕅E
+  瑓琹浩彥慢敳
+  瑓琹灹彥湩潦
+  䉘I
+  ୘I
+  ஀I
+  ௘I
+  ఀI
+  䊨I
+  䊀I
+  䋘I
+  䌀I
+  䍘I
+  䎀I
+  䪘I
+  ౘI
+  ೘I
+  ഀI
+  ൘I
+  ඀I
+  ನI
+  ಀI
+  䫨I
+  䫀I
+  䬘I
+  ๘I
+  ෘI
+  ฀I
+  ໘I
+  ༀI
+  ຨI
+  ຀I
+  䭨I
+  䭀I
+  䮘I
+  䯀I
+  䰘I
+  䱀I
+  䳘I
+  མI
+  ྀI
+  䴀I
+  䵘I
+  ࿘I
+  ကI
+  䶀I
+  ䷘I
+  ၘI
+  ႀI
+  იI
+  ᄀI
+  丨I
+  一I
+  乘I
+  ᅘI
+  ᆀI
+  亀I
+  付I
+  ᇘI
+  ሀI
+  伀I
+  ቀI
+  䙰G
+  䬐B
+  䫠B
+  邠D
+  邰D
+  殰B
+  氰B
+  氀B
+  沐B
+  洐B
+  ተI
+  ኀI
+  䭰B
+  䭀B
+  洠B
+  浰B
+  湰B
+  አI
+  䮰B
+  䮀B
+  滠B
+  焰B
+  矀B
+  ዀI
+  净B
+  冐B
+  碠B
+  碰B
+  듀B
+  둠B
+  둀B
+  ዠI
+  几B
+  凐B
+  禰B
+  秀B
+  ጀI
+  刀B
+  凰B
+  称B
+  稀B
+  ጠI
+  址B
+  囀B
+  嬰E
+  崰E
+  戠E
+  揰E
+  娀E
+  栠E
+  嶐E
+  检E
+  ⍠F
+  曀E
+  怠E
+  撠E
+  ፀI
+  寠B
+  孠B
+  碀E
+  窀E
+  羀E
+  腐E
+  睐E
+  薰E
+  章E
+  虐E
+  ⲠF
+  葀E
+  絰E
+  舀E
+  ፠I
+  憰B
+  憀B
+  ⊠F
+  ␰F
+  开B
+  彠B
+  幰B
+  ⢐F
+  庠B
+  恰B
+  庀B
+  怰B
+  廠B
+  忰B
+  ᎀI
+  旀B
+  斐B
+  ⯐F
+  ⵰F
+  拠B
+  捀B
+  懠B
+  ㇠F
+  成B
+  摠B
+  懰B
+  搐B
+  抐B
+  提B
+  ᎠI
+  昐B
+  无B
+  稰B
+  ᏀI
+  晐B
+  映B
+  穀B
+  ᏠI
+  暐B
+  晠B
+  穐B
+  ᐀I
+  槰B
+  槀B
+  穠B
+  ᐠI
+  ꔰF
+  ꔠF
+  ᑀI
+  뺰F
+  섀C
+  뜰D
+  뜀D
+  㣰G
+  㣠G
+  㥰G
+  㥠G
+  D
+  D
+  㦐G
+  㦀G
+  װE
+  ְE
+  㦰G
+  㦠G
+  ᔠI
+  ⩐E
+  陠B
+  ⷠE
+  ⷀE
+  餰B
+  馠B
+  靰B
+  飰B
+  饰B
+  饀B
+  餠B
+  預B
+  頀B
+  ㅰE
+  ㅐE
+  鱰B
+  鳠B
+  骰B
+  鰰B
+  鲰B
+  鲀B
+  鱠B
+  魐B
+  魀B
+  㔠E
+  㔀E
+  龰B
+  ꀠB
+  鷰B
+  齰B
+  鿰B
+  鿀B
+  龠B
+  麐B
+  麀B
+  㣐E
+  㢰E
+  ꋰB
+  ꍠB
+  ꄰB
+  ꊰB
+  ꌰB
+  ꌀB
+  ꋠB
+  ꇐB
+  ꇀB
+  ᙠI
+  䃠E
+  䃀E
+   I
+  䦀E
+  䥠E
+  䪠E
+  놠B
+  ᛀI
+  䬰E
+  뎰B
+  ᛠI
+  䰀E
+  ᜐI
+  僰E
+  僀E
+  맰B
+  릐B
+  륰B
+  뤐B
+  볠B
+  변B
+  봐B
+  볰B
+  ᜰI
+  净E
+  冐E
+  쁠B
+  뿀B
+  봠B
+  빐B
+  빀B
+  뷠B
+  뷐B
+  뵰B
+  샰B
+  샀B
+  쇐B
+  섀B
+  ᝐI
+  凰E
+  ᝰI
+  到E
+  뇀B
+  ថI
+  劐E
+  ឰI
+  勰E
+  ័I
+  匰E
+  ៰I
+  叠E
+  댐B
+  炰E
+  灠E
+  躐E
+  蹀E
+  ᡐI
+  顰E
+  韠E
+  㤐G
+  㤀G
+  㧐G
+  㧀G
+  ᡰI
+  ꌐE
+  ꊀE
+  㤰G
+  㤠G
+  㧰G
+  㧠G
+  톐E
+  텐E
+  㨐G
+  㨀G
+  E
+  E
+  㨰G
+  㨠G
+  E
+  ᥐI
+  﫰E
+  並E
+  㩐G
+  㩀G
+  ᥰI
+  ͰF
+  ˰F
+  㩰G
+  㩠G
+  ߀F
+  ސF
+  㥐G
+  㥀G
+  㪐G
+  㪀G
+  ᧠I
+  འF
+  ໠F
+  㪰G
+  㪠G
+  ᨀI
+  ថF
+  ᜐF
+  㫐G
+  㫀G
+  ᨠI
+  ᧐F
+  ᦠF
+  왐B
+  연B
+  옰B
+  였B
+  옠B
+  왰B
+  옐B
+  ᩀI
+  ᭀF
+  ᬐF
+  자B
+  욀B
+  원B
+  욐B
+  움B
+  죰B
+  우B
+  ᩠I
+  ᴐF
+  ᳀F
+  즰B
+  쬀B
+  쳰B
+  ᪀I
+  ὀF
+  ỰF
+  쵠B
+  캰B
+  탰B
+  ᪰I
+   F
+  ⩰F
+  ⩀F
+  ✐F
+  ✰F
+  ⊀F
+  ╰F
+  ⣰F
+  ⡐F
+  ♀F
+  ⟐F
+  ㏀F
+  ㎐F
+  だF
+  むF
+  ⮰F
+  ⺠F
+  ㉀F
+  ㆠF
+  ⾀F
+  ㄠF
+  ᫰I
+  㕠F
+  㔰F
+  술C
+  숀C
+  숰C
+  ᬐI
+  㛐F
+  㚠F
+  썐C
+  쌰C
+  썠C
+  ᬰI
+  㣀F
+  㢐F
+  쑠C
+  쑰C
+  썰C
+  쎠C
+  쏐C
+  ᭐I
+  㪰F
+  㪀F
+  왠C
+  왰C
+  앰C
+  얠C
+  에C
+  ᭰I
+  㭀F
+  㬐F
+  쳠C
+  줐C
+  잠C
+  터C
+  훠C
+  쪀C
+  ᮐI
+  㯐F
+  㮠F
+  C
+  C
+  C
+  ﰐC
+  ǠD
+  C
+  ᮰I
+  㱠F
+  㰰F
+  ⃠D
+  ᯐI
+  㳰F
+  㳀F
+  ⒀D
+  ᯰI
+  㴰F
+  ᰐI
+  䐰F
+  䐐F
+  ᰰI
+  䬠F
+  䬀F
+  ᱐I
+  䯠F
+  똰B
+  ᱰI
+  䱀F
+  ᲐI
+  傰F
+  傀F
+  ᲰI
+  唀F
+  哐F
+  ᳐I
+  唠F
+  뙀B
+  ᳰI
+  地F
+  圀F
+  ᴐI
+  夠F
+  声F
+  ᴰI
+  嬐F
+  嫠F
+  ᵐI
+  崀F
+  峐F
+  ᵰI
+  旐F
+  新F
+  ᶐI
+  潀F
+  漠F
+  ᶰI
+  磐F
+  碰F
+  ᷐I
+  艠F
+  艀F
+  ᷰI
+  茠F
+  뤀B
+  ḠI
+  裀F
+  袠F
+  誐F
+  詰F
+  ꡰF
+  ꡐF
+  ꦀF
+  ꥠF
+  ꭐF
+  ꬀F
+  굀F
+  곰F
+   I
+  기F
+  글F
+  ᵠC
+  ⣰C
+  ⧐C
+  ⢀C
+  ⥠C
+  ⩀C
+  ⪰C
+  ♠C
+  ∠C
+  ⑀C
+  ᲠC
+  †I
+  껀F
+  꺐F
+  硠C
+  菰C
+  蓐C
+  莀C
+  葠C
+  蕀C
+  薰C
+  腰C
+  結C
+  罠C
+  瞠C
+  ⁀I
+  꽐F
+  꼠F
+  鹀C
+  ꇰC
+  ꈰC
+  ꉰC
+  ꊰC
+  ꅀC
+  ꆐC
+  鶰C
+  ⁠I
+  꿠F
+  꾰F
+  밠C
+  뿰C
+  쀰C
+  쁰C
+  산C
+  뽀C
+  뾐C
+  뮐C
+  ₀I
+  뀀F
+  샰C
+  뿐F
+  뾰F
+  손F
+  셰F
+  썰F
+  썐F
+  유F
+  윀F
+  쪠F
+  쪀F
+  쭠F
+  쬰F
+  쯰F
+  쯀F
+  첀F
+  챐F
+  촐F
+  쳠F
+  촰F
+  ▐D
+  핐F
+  픠F
+  ⤠D
+  ⊰I
+  䢀D
+  䙰D
+  ⋐I
+  櫰D
+  楀D
+  ⋰I
+  浰D
+  洐D
+  ⌐I
+  纠D
+  繀D
+  邀D
+  邐D
+  ĀĀĀĀĀĀĀĀĀĠĠĠĠĠĀĀĀĀĀĀĀĀĀĀĀĀĀĀĀĀĀĀ`ɀɀɀɀɀɀɀɀɀɀɀɀɀɀɀXXXXXXXXXXɀɀɀɀɀɀɀUUUUUUEEEEEEEEEEEEEEEEEEEEɀɀɀɀɀɀVVVVVVFFFFFFFFFFFFFFFFFFFFɀɀɀɀĀ
+  䍇㩃⠠乇⥕㐠㤮㈮
+  䍇㩃⠠摴㙭ⴴ⤱㐠㤮㈮
