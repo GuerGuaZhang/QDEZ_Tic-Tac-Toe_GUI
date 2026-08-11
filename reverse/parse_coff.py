@@ -1,13 +1,15 @@
 # -*- coding: utf-8 -*-
-"""综合逆向脚本：
+"""综合逆向脚本（自包含）：
 1) 解析 PE 节表
-2) 解析 COFF_SYMBOLS 符号（含字符串表），输出关键函数地址
+2) 直接从 二中棋.exe 末尾解析内嵌 COFF 符号表（符号+字符串表），输出关键函数地址
 3) 用 capstone 反汇编 .text 指定 RVA
+
+不再依赖外部导出的 COFF_SYMBOLS 文件：COFF 符号表位于 PE 文件尾部，
+其位置/条数记录在 COFF File Header 的 PointerToSymbolTable / NumberOfSymbols。
 """
 import struct, sys
 
 PE_PATH = '二中棋.exe'
-COFF_PATH = 'COFF_SYMBOLS'
 
 def pe_sections(exe):
     pe = open(exe, 'rb').read()
@@ -27,8 +29,7 @@ def pe_sections(exe):
                      'raddr': raddr, 'rsize': rsize})
     return pe, secs
 
-def parse_coff(path):
-    data = open(path, 'rb').read()
+def parse_coff(data, strtab_base=None):
     n = len(data)
     rec = 18
     # 第一遍：收集 long-name 的 strtab 引用，估算 strtab 基址
@@ -57,7 +58,8 @@ def parse_coff(path):
                 refs.append((s['pos'] + 1, val))
             except Exception:
                 pass
-    strtab_base = min(a - v for a, v in refs) if refs else None
+    if strtab_base is None:
+        strtab_base = min(a - v for a, v in refs) if refs else None
     return data, syms, strtab_base
 
 def sym_name(data, s, strtab_base):
@@ -82,8 +84,20 @@ def cstr(data, base, off):
         e = len(data)
     return data[p:e].decode('latin1', 'replace')
 
+def pe_symbol_table(exe):
+    """从 PE 文件尾部提取 COFF 符号表+字符串表，返回 (字节, 字符串表相对基址)。"""
+    data = open(exe, 'rb').read()
+    pe = int.from_bytes(data[0x3C:0x40], 'little')
+    sym_off = int.from_bytes(data[pe + 12:pe + 16], 'little')   # PointerToSymbolTable
+    n_sym = int.from_bytes(data[pe + 16:pe + 20], 'little')     # NumberOfSymbols
+    end = sym_off + n_sym * 18
+    strtab_len = int.from_bytes(data[end:end + 4], 'little')    # 字符串表长度（含头4字节）
+    return data[sym_off:end + strtab_len], n_sym * 18
+
+
 def main():
-    data, syms, strtab_base = parse_coff(COFF_PATH)
+    coff, strtab_base = pe_symbol_table(PE_PATH)
+    data, syms, strtab_base = parse_coff(coff, strtab_base)
     pe, secs = pe_sections(PE_PATH)
     print("strtab_base =", strtab_base)
     sec_by_idx = [None] + secs   # COFF section 号 1-based
