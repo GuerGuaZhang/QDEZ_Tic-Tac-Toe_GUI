@@ -1,0 +1,38 @@
+;;; function player1  0x319D - 0x321C (37 ins)
+0x40319D:  push    rbp
+0x40319E:  mov     rbp, rsp
+0x4031A1:  mov     eax, dword ptr [rip + 0xa7f51]
+0x4031A7:  cmp     eax, 1
+0x4031AA:  jne     0x4031b7  -> 0x4031B7
+0x4031AC:  mov     eax, dword ptr [rip + 0xa7e96]
+0x4031B2:  cmp     eax, -1
+0x4031B5:  jne     0x4031cd  -> 0x4031CD
+0x4031B7:  mov     eax, dword ptr [rip + 0xa7f3b]
+0x4031BD:  cmp     eax, -1
+0x4031C0:  jne     0x4031d8  -> 0x4031D8
+0x4031C2:  mov     eax, dword ptr [rip + 0xa7e80]
+0x4031C8:  cmp     eax, -1
+0x4031CB:  jne     0x4031d8  -> 0x4031D8
+0x4031CD:  mov     eax, dword ptr [rip + 0x71e41]
+0x4031D3:  cmp     eax, 1
+0x4031D6:  je      0x40320e  -> 0x40320E
+0x4031D8:  mov     eax, dword ptr [rip + 0xa7f1a]
+0x4031DE:  cmp     eax, 1
+0x4031E1:  jne     0x4031ee  -> 0x4031EE
+0x4031E3:  mov     eax, dword ptr [rip + 0xa7e5f]
+0x4031E9:  cmp     eax, 1
+0x4031EC:  jne     0x403204  -> 0x403204
+0x4031EE:  mov     eax, dword ptr [rip + 0xa7f04]
+0x4031F4:  cmp     eax, -1
+0x4031F7:  jne     0x403215  -> 0x403215
+0x4031F9:  mov     eax, dword ptr [rip + 0xa7e49]
+0x4031FF:  cmp     eax, 1
+0x403202:  jne     0x403215  -> 0x403215
+0x403204:  mov     eax, dword ptr [rip + 0x71e0a]
+0x40320A:  test    eax, eax
+0x40320C:  jne     0x403215  -> 0x403215
+0x40320E:  mov     eax, 1
+0x403213:  jmp     0x40321a  -> 0x40321A
+0x403215:  mov     eax, 0
+0x40321A:  pop     rbp
+0x40321B:  ret     

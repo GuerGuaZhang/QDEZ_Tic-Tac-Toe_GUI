@@ -33,9 +33,11 @@ def rva_to_raw(secs, rva):
 
 def disasm_range(secs, code, start_rva, end_rva):
     """反汇编 [start_rva, end_rva)，返回指令列表 [(abs_addr, mnemonic, op_str, size)]"""
+    text = next(s for s in secs if s['name'] == '.text')
     raw = rva_to_raw(secs, start_rva)
+    rel = raw - text['raddr']          # 文件偏移 -> .text 节切片内偏移
     length = end_rva - start_rva
-    chunk = code[raw:raw+length]
+    chunk = code[rel:rel + length]
     md = Cs(CS_ARCH_X86, CS_MODE_64)
     md.detail = True
     ins = []
@@ -60,28 +62,35 @@ def fmt(ins):
         lines.append(f"0x{x['addr']:X}:  {x['mnem']:<7} {x['op']}{t}")
     return "\n".join(lines)
 
+# 函数边界来自 reverse/pdata.py（.pdata RUNTIME_FUNCTION 表，符号地址即真实起点）
 BOUND = {
-    'main': 0x49E1,
-    'home': 0x1D7C,
-    'hint': 0x24B7,
-    'win':  0x32DF,
-    'AI':   0x3B7A,
-    'game': 0x46E1,
+    'main':   0x4719,
+    'home':   0x1D7C,
+    'hint':   0x2330,
+    'win':    0x28A8,
+    'event':  0x319D,
+    'player1': 0x321C,
+    'puthint': 0x32DF,
+    'AI':     0x3B7A,
+    'game':   0x46E1,
 }
 START = {
-    'main': 0x4690,
-    'home': 0x19DE,
-    'hint': 0x1D7C,
-    'win':  0x24B7,
-    'AI':   0x32C0,
-    'game': 0x3B00,
+    'main':   0x46E1,
+    'home':   0x19DE,
+    'hint':   0x1D7C,
+    'win':    0x24B7,
+    'event':  0x28A8,
+    'player1': 0x319D,
+    'puthint': 0x321C,
+    'AI':     0x32DF,
+    'game':   0x3B7A,
 }
 
 def main():
     pe, secs = pe_secs(PE_PATH)
     text = next(s for s in secs if s['name'] == '.text')
     code = pe[text['raddr']:text['raddr']+text['rsize']]
-    for name in ('main','home','hint','win','AI','game'):
+    for name in ('main','home','hint','win','event','player1','puthint','AI','game'):
         start, end = START[name], BOUND[name]
         ins = disasm_range(secs, code, start, end)
         with open(f'reverse/dis_{name}.asm.txt', 'w', encoding='utf-8') as f:
