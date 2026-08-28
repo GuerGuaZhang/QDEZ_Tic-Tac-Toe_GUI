@@ -40,7 +40,7 @@ kinds = {}
 for _ in range(2000):
     board = b()
     board[0][0] = P1
-    msg, helped = mod.apply_event(board, P1)
+    msg, helped, _rev = mod.apply_event(board, P1)
     # 事件后棋盘仍合法（值∈{0,1,-1}），且不越界
     ok2 = all(board[r][c] in (0,1,-1) for r in range(3) for c in range(3))
     if not ok2:
@@ -88,8 +88,8 @@ try:
     app.on_place(0, 0); root.update()
     # 落子本身必然生效；但随机事件可能立刻清掉 (0,0)，因此不苛求该格保留
     ok(app.game.board[0][0] in (EMPTY, P1), "玩家落子已执行（可能被随机事件消除）")
-    ok(app.game.mystery == 1, "落子后触发神秘事件计数+1")
-    ok("事件" in app.game.last_event, "事件消息已显示")
+    ok(app.game.mystery in (0, 1), "神秘计数：仅神秘事件(2/12)才+1")
+    ok(app.game.last_event != "" and "事件" in app.game.last_event, "事件消息已显示")
     # 当前实现为鼠标操作（on_place），无键盘控制，故不做键盘冒烟
     app.show("menu"); root.destroy()
 except Exception as e:

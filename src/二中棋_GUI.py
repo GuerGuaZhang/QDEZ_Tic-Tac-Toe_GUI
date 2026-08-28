@@ -81,64 +81,89 @@ EVENT_MSG = {
 
 
 def apply_event(board, just_moved):
-    """触发一个随机事件，返回 (描述, 是否帮某方多下了一手)。"""
-    kind = random.choice(["cell", "cell", "row", "col", "diag1", "diag2",
-                          "help", "reverse", "none", "none"])
-    if kind == "cell":
+    """按原版 event 函数（rand()%12+1）权重触发随机事件。
+    返回 (描述, 是否帮某方多下了一手, 是否反转局势)。
+    事件类型：1-4 消除格子 / 5 行 / 6 列 / 7 左上-右下对角 / 8 右上-左下对角
+              / 9 帮你下一手（当前玩家） / 10 反转局势（内部 rand()&1 一半概率无事发生）
+              / 11-12 神秘事件（计数由 Game 层处理，此处返回 "mystery"）。"""
+    t = random.randrange(12) + 1            # 对应原版 rand()%12+1
+    if t <= 4:                              # 消除格子
         cells = empties(board)
         r, c = random.choice(cells) if cells else (0, 0)
         board[r][c] = EMPTY
-        return EVENT_MSG["cell"] % (r + 1, c + 1), False
-    if kind == "row":
+        return EVENT_MSG["cell"] % (r + 1, c + 1), False, False
+    if t == 5:                              # 消除第 r 行
         r = random.randrange(BOARD_N)
         for c in range(BOARD_N):
             board[r][c] = EMPTY
-        return EVENT_MSG["row"] % (r + 1,), False
-    if kind == "col":
+        return EVENT_MSG["row"] % (r + 1,), False, False
+    if t == 6:                              # 消除第 c 列
         c = random.randrange(BOARD_N)
         for r in range(BOARD_N):
             board[r][c] = EMPTY
-        return EVENT_MSG["col"] % (c + 1,), False
-    if kind == "diag1":
+        return EVENT_MSG["col"] % (c + 1,), False, False
+    if t == 7:                              # 左上到右下对角线
         for i in range(BOARD_N):
             board[i][i] = EMPTY
-        return EVENT_MSG["diag1"], False
-    if kind == "diag2":
+        return EVENT_MSG["diag1"], False, False
+    if t == 8:                              # 右上到左下对角线
         for i in range(BOARD_N):
             board[i][BOARD_N - 1 - i] = EMPTY
-        return EVENT_MSG["diag2"], False
-    if kind == "help":
+        return EVENT_MSG["diag2"], False, False
+    if t == 9:                              # 帮你下一手（当前玩家）
         cells = empties(board)
         if cells:
             r, c = random.choice(cells)
             board[r][c] = just_moved
-            return EVENT_MSG["help"] % (r + 1, c + 1), True
-        return EVENT_MSG["none"], False
-    if kind == "reverse":
-        for r in range(BOARD_N):
-            for c in range(BOARD_N):
-                if board[r][c] != EMPTY:
-                    board[r][c] = -board[r][c]
-        return EVENT_MSG["reverse"], False
-    return EVENT_MSG["none"], False
+            return EVENT_MSG["help"] % (r + 1, c + 1), True, False
+        return EVENT_MSG["none"], False, False
+    if t == 10:                             # 反转局势：一半概率无事发生
+        if random.randrange(2) == 1:
+            for r in range(BOARD_N):
+                for c in range(BOARD_N):
+                    if board[r][c] != EMPTY:
+                        board[r][c] = -board[r][c]
+            return EVENT_MSG["reverse"], False, True
+        return EVENT_MSG["none"], False, False
+    # t in (11, 12): 神秘事件
+    return "mystery", False, False
 
 
-# ---------- 人机 AI（三子棋） ----------
+# ---------- 人机 AI（三子棋，对齐原版 5 层策略） ----------
+def _line_missing(line, board, val):
+    """线内已有 2 个 val 且 1 空 → 返回空位，否则 None。"""
+    cells = [c for c in line if board[c[0]][c[1]] == EMPTY]
+    if len(cells) == 1 and sum(board[r][c] == val for (r, c) in line) == 2:
+        return cells[0]
+    return None
+
+
 def ai_move(board, ai_val, human_val):
-    # 1) 自己能赢
-    for (r, c) in empties(board):
-        if check_winner(_place(board, r, c, ai_val)) == ai_val:
-            return (r, c)
-    # 2) 挡玩家
-    for (r, c) in empties(board):
-        if check_winner(_place(board, r, c, human_val)) == human_val:
-            return (r, c)
+    # 1) 赢：行/列/对角任一线已有 2 子 → 补第 3 格
+    for line in WIN_LINES:
+        mv = _line_missing(line, board, ai_val)
+        if mv:
+            return mv
+    # 2) 挡玩家：同法堵 2 子线
+    for line in WIN_LINES:
+        mv = _line_missing(line, board, human_val)
+        if mv:
+            return mv
     # 3) 中心优先
-    cells = empties(board)
-    if (1, 1) in cells:
+    if (1, 1) in empties(board):
         return (1, 1)
-    # 4) 随机
-    return random.choice(cells)
+    # 4) 线扩展：线内已有 1 个己方子且无对方子 → 占位发展
+    for line in WIN_LINES:
+        if sum(board[r][c] == ai_val for (r, c) in line) == 1 and \
+           sum(board[r][c] == human_val for (r, c) in line) == 0:
+            for (r, c) in line:
+                if board[r][c] == EMPTY:
+                    return (r, c)
+    # 5) 兜底：固定顺序找第一个空格（原版线性索引 4,6,10,12,5,7,9,11）
+    for (r, c) in [(0, 0), (0, 2), (2, 0), (2, 2), (0, 1), (1, 0), (1, 2), (2, 1)]:
+        if board[r][c] == EMPTY:
+            return (r, c)
+    return None
 
 
 # ---------- 游戏状态 ----------
@@ -148,6 +173,7 @@ class Game:
     def __init__(self):
         self.mode = MODE_B          # 默认：单人，人机后走
         self.speed = 2              # 速度档位（越大越慢，影响 AI 思考延时）
+        self.kb = "wsad"            # 键盘偏好：wsad+空格 / arrows 方向键+Enter（仅单人有效）
         self.board = [[EMPTY] * BOARD_N for _ in range(BOARD_N)]
         self.turn = P1
         self.score_p1 = 0
@@ -193,10 +219,13 @@ class GameApp:
         self.root.resizable(False, False)
         self.game = Game()
         self.page = None
+        self._focus_rc = (1, 1)     # 键盘光标（0 基，(1,1)=中心）
+        self._reversed = False      # 本手是否反转局势（反转后不切换回合）
 
         self.container = tk.Frame(root)
         self.container.pack(fill=tk.BOTH, expand=True)
 
+        self.root.bind("<KeyPress>", self.on_key)
         self.build_pages()
         self.show("menu")
 
@@ -230,7 +259,7 @@ class GameApp:
                  ("设置 —— P", "settings"), ("退出 —— E", "exit")]
         for txt, target in items:
             if target == "exit":
-                cmd = self.root.destroy
+                cmd = self.confirm_exit
             elif target == "help":
                 cmd = self.show_help
             else:
@@ -259,16 +288,33 @@ class GameApp:
                   command=lambda: self.change_speed(-1)).pack(side=tk.LEFT, padx=6)
         tk.Label(f, text="速度档位：越低越快，越高 AI 思考/动画越明显",
                  font=("微软雅黑", 9), bg="#17191d", fg="#888").pack(pady=2)
-        tk.Label(f, text="对局：直接用鼠标点击棋盘格子落子即可",
+        row2 = tk.Frame(f, bg="#17191d")
+        row2.pack(pady=6)
+        tk.Button(row2, text="  ◀  ", font=("微软雅黑", 13), width=4,
+                  command=lambda: self.change_kb()).pack(side=tk.LEFT, padx=6)
+        self.lbl_kb = tk.Label(row2, text="", font=("微软雅黑", 13),
+                               bg="#17191d", fg="#d8d8d8")
+        self.lbl_kb.pack(side=tk.LEFT, padx=6)
+        tk.Button(row2, text="  ▶  ", font=("微软雅黑", 13), width=4,
+                  command=lambda: self.change_kb()).pack(side=tk.LEFT, padx=6)
+        tk.Label(f, text="键盘偏好：wsad+空格 / 方向键+Enter（仅单人游戏时有效）",
+                 font=("微软雅黑", 9), bg="#17191d", fg="#888").pack(pady=2)
+        tk.Label(f, text="对局：鼠标点击落子，或按偏好键位移动光标+空格/Enter 落子",
                  font=("微软雅黑", 10), bg="#17191d", fg="#9cf").pack(pady=8)
         tk.Button(f, text="返回主菜单", command=lambda: self.show("menu")).pack(pady=12)
         return f
 
     def refresh_settings(self):
         self.lbl_speed.config(text=f"当前速度：{self.game.speed}")
+        self.lbl_kb.config(text="键盘偏好：wsad + 空格" if self.game.kb == "wsad"
+                           else "键盘偏好：方向键 + Enter")
 
     def change_speed(self, d):
         self.game.speed = max(1, min(10, self.game.speed + d))
+        self.refresh_settings()
+
+    def change_kb(self):
+        self.game.kb = "arrows" if self.game.kb == "wsad" else "wsad"
         self.refresh_settings()
 
     # ---------- 游戏说明（分页剧情） ----------
@@ -303,6 +349,14 @@ class GameApp:
         self.lbl_help.config(text=self.HELP_TEXT[0])
         self.show("help")
 
+    def confirm_exit(self):
+        """主菜单退出确认（对应原版'确定要离开吗？/是y/否n'）+ qwq 彩蛋。"""
+        again = messagebox.askyesno(
+            "确定要离开吗？", "是 —— y    否 —— n\n\n真的要离开吗？")
+        if again:
+            messagebox.showinfo("qwq", "qwq")
+            self.root.destroy()
+
     def help_next(self):
         self._help_idx += 1
         if self._help_idx >= len(self.HELP_TEXT):
@@ -327,6 +381,7 @@ class GameApp:
     def start_game(self, mode):
         self.game.mode = mode
         self.game.reset_board()
+        self._focus_rc = (1, 1)
         self.show("game")
         self.start_turn()
 
@@ -359,7 +414,33 @@ class GameApp:
         c = event.x // self.CELL
         r = event.y // self.CELL
         if 0 <= r < BOARD_N and 0 <= c < BOARD_N:
+            self._focus_rc = (r, c)
             self.on_place(r, c)
+
+    def on_key(self, event):
+        """键盘控制（对应原版 wsad/方向键 + 空格/Enter 落子）。
+        双人模式两组键都可用；单人模式仅用设置里的偏好组。"""
+        if self.page != "game" or self.game.round_over:
+            return
+        k = event.keysym.lower()
+        if self.game.mode == MODE_C:
+            moves = {"w": (-1, 0), "s": (1, 0), "a": (0, -1), "d": (0, 1),
+                     "up": (-1, 0), "down": (1, 0), "left": (0, -1), "right": (0, 1)}
+            place = ("space", "return", "kp_enter")
+        elif self.game.kb == "wsad":
+            moves = {"w": (-1, 0), "s": (1, 0), "a": (0, -1), "d": (0, 1)}
+            place = ("space",)
+        else:
+            moves = {"up": (-1, 0), "down": (1, 0), "left": (0, -1), "right": (0, 1)}
+            place = ("return", "kp_enter")
+        if k in moves:
+            dr, dc = moves[k]
+            r, c = self._focus_rc
+            self._focus_rc = (max(0, min(BOARD_N - 1, r + dr)),
+                              max(0, min(BOARD_N - 1, c + dc)))
+            self.draw_board()
+        elif k in place:
+            self.on_place(*self._focus_rc)
 
     # ---------- 对局逻辑 ----------
     def mode_name(self):
@@ -374,7 +455,9 @@ class GameApp:
         who = self.game.turn
         name = n1 if who == P1 else n2
         mark = P1_TXT if who == P1 else P2_TXT
-        self.lbl_turn.config(text=f"现在轮到 {name}（执{mark}）了，你要下在哪一行，哪一列？")
+        kb_hint = ("（用wsad控制方向，空格键放置棋子）" if self.game.kb == "wsad"
+                   else "（用方向键控制方向，Enter键放置棋子）")
+        self.lbl_turn.config(text=f"现在轮到 {name}（执{mark}）了，你要下在哪一行，哪一列？{kb_hint}")
         self.draw_board()
 
     def draw_board(self):
@@ -397,6 +480,12 @@ class GameApp:
                 else:
                     self.cv.create_line(x0, y0, x1, y1, fill="#ff8a80", width=4)
                     self.cv.create_line(x1, y0, x0, y1, fill="#ff8a80", width=4)
+        # 键盘光标高亮（虚线框）
+        if not self.game.round_over:
+            fr, fc = self._focus_rc
+            x0, y0 = fc * self.CELL + 3, fr * self.CELL + 3
+            x1, y1 = (fc + 1) * self.CELL - 3, (fr + 1) * self.CELL - 3
+            self.cv.create_rectangle(x0, y0, x1, y1, outline="#9cf", width=2, dash=(5, 3))
 
     def _delay(self):
         return 250 * self.game.speed
@@ -429,16 +518,23 @@ class GameApp:
         self.after_place(self.game.turn)
 
     def after_place(self, player):
-        """落子后：神秘事件计数 -> 触发随机事件 -> 检查胜负/彩蛋。"""
-        self.game.mystery += 1
-        msg, _helped = apply_event(self.game.board, player)
-        self.game.last_event = f"神秘事件×{self.game.mystery}！！！  事件发生！\n{msg}"
+        """落子后：触发随机事件（对齐原版权重）-> 神秘计数/彩蛋 -> 检查胜负。"""
+        msg, _helped, _reversed = apply_event(self.game.board, player)
+        self._reversed = _reversed
+        if msg == "mystery":
+            self.game.mystery += 1
+            self.game.last_event = f"神秘事件×{self.game.mystery}！！！"
+            if self.game.mystery >= 5:
+                self.game.last_event += "\n5次神秘事件凑齐了……"
+                self.lbl_event.config(text=self.game.last_event)
+                self.refresh_game()
+                self.root.after(self._delay(), self.crash_egg)
+                return
+        else:
+            self.game.last_event = f"事件发生！\n{msg}"
         self.lbl_event.config(text=self.game.last_event)
         self.refresh_game()
-        if self.game.mystery >= 5:
-            self.root.after(self._delay(), self.crash_egg)
-        else:
-            self.root.after(self._delay(), self.check_result)
+        self.root.after(self._delay(), self.check_result)
 
     def check_result(self):
         if self.game.round_over:
@@ -449,7 +545,11 @@ class GameApp:
         elif board_full(self.game.board):
             self.finish_round(EMPTY)
         else:
-            self.game.turn = P2 if self.game.turn == P1 else P1
+            # 反转局势：原版在 event 内翻转玩家后主循环再翻转，净效果为回合不切换
+            rev = self._reversed
+            self._reversed = False
+            if not rev:
+                self.game.turn = P2 if self.game.turn == P1 else P1
             self.refresh_game()
             self.start_turn()
 
@@ -476,7 +576,8 @@ class GameApp:
             self.show_result()
 
     def crash_egg(self):
-        """神秘事件满 5 次：Windows 崩溃整蛊彩蛋。"""
+        """神秘事件满 5 次：Windows 崩溃整蛊彩蛋（对齐原版文案与弹窗标题）。"""
+        messagebox.showwarning("Windows系统自动提示", "Windows的数据遭受了毁灭性的打击！！！")
         messagebox.showwarning("Windows系统自动提示", "您的Windows可能出现了点问题。")
         messagebox.showwarning("Windows系统自动提示", "Windows正在尝试修复您的系统中……")
         messagebox.showerror("Windows系统自动提示", "系统内部存储器已被破坏！")
@@ -504,8 +605,12 @@ class GameApp:
             winner = n2
         else:
             winner = None
-        txt = "正在计算最终得分……\n\n最终结果是……\n"
-        txt += f"{winner}！\n" if winner else "平局！\n"
+        # 对齐原版结算文案顺序
+        txt = "正在计算最终得分……\n\n"
+        if winner:
+            txt += f"最终的胜利者是：\n{winner}！\n"
+        else:
+            txt += "最终结果是……\n平局！\n"
         txt += f"\n你们的比分为：{s1}:{s2}。\n\n欢迎下次再玩！"
         self.lbl_res.config(text=txt)
         self.show("result")
